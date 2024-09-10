@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>medusa story</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div> </div>
+      <div class="title"> 
+        <strong> Story of Medusa </strong>
+      </div>
+      <div class ="navi">     
+            <ul>
+             <li class="menu-item"><a href="index.html" data-scroll>page 1</a></li>
+             <li class="menu-item"><a href="two.html" data-scroll>page 2</a></li>
+             <li class="menu-item"><a href="three.html" data-scroll>page 3</a></li>
+           </ul>
+    </div>
+    </header>
+    <main>
+    
+      <div class="pics">
+        <img src="medusa.png" alt="medusa pic">
+      </div>
+
+      <div class="ti">
+        <h1> This is the story of Medusa</h1>
+      </div>
+     <div class="desc">
+     <p> Medusa, the daughter of Phorcys and Ceto, the primordial sea Gods of Greek Mythology was one of three sisters born of the island of Sarpedon.
+      Unlike her sisters, Medusa was mortal and thus susceptible to the effects of nature and the whims of the gods.
+      She was enchanting and greatly desired by others. Despite her great beauty, Medua pledges herself to the goddess Athena.
+      She takes the vows of celibacy that were required of Athena's priestesses.
+      Life takes a sharp turn for Medusa when Poseidon, the god of the seas laid his eyes on Medusa.</p> 
+    </div>
+
+    <div class="drop">
+      <select id="pageSelect" onchange="navigateToPage()">
+        <option value="">Select a page</option>
+        <option value="index.html">Page 1</option>
+        <option value="two.html">Page 2</option>
+        <option value="three.html">Page 3</option>
+    </select>
+  
+    <script>
+        function navigateToPage() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    </div>
+    </main>
+  
+    <footer>
+      
+    </footer>
+  </body>
+</html>
