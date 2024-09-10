@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>medusa story</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div> </div>
+      <div class="title"> 
+        <strong> Story of Medusa </strong>
+      </div>
+      <div class ="navi">     
+            <ul>
+             <li class="menu-item"><a href="index.html" data-scroll>page 1</a></li>
+             <li class="menu-item"><a href="two.html" data-scroll>page 2</a></li>
+             <li class="menu-item"><a href="three.html" data-scroll>page 3</a></li>
+           </ul>
+    </div>
+    </header>
+    <main>
+      <div class="pics">
+        <img src="three.jpeg" alt="medusa pic">
+      </div>
+
+      <div class="ti">
+        <h1> Medusa Continued...</h1>
+      </div>
+     <div class="desc">
+     <p> 
+      Perseus comes to claim the head of Medusa with divine assistance. As the son of Zeus he was able to ask the gods directly for help to kill Medusa. From Athena, he receives a mirrored bronze shield, from Hermes winged sandals, from Hephaestus a mighty sword, and lastly, the helm of invisibility from Hades. With these gifts from the gods, Perseus sneaks into Medusa’s lair and using the mirror shield he is able to see her directly without looking at her and defeat Medusa. When Medusa’s head was severed, the two children of Poseidon sprang forth, in their full form. As Perseus attempts to escape the island, the body of Medusa is found by her two sisters who hunt for Perseus but are unsuccessful. Even though her head was severed, her abilities remained as the head of Medusa is used in future battles. Perseus gifts the head of Medusa back to Athena and she becomes a symbol of protection and her blood is used as medicine and poison with the power to give and take away life. To conclude, the legend of Medusa is one of beauty and innocence transformed into anger and hate. 
+     </p> 
+    </div>
+    <table>
+      <thead>
+          <tr>
+              <th>Greek Character</th>
+              <th>Link to story</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>Athena</td>
+              <td><a href="https://www.britannica.com/topic/Athena-Greek-mythology">Athena's website</a></td>
+          </tr>
+          <tr>
+              <td>Poseidon</td>
+              <td><a href="https://www.britannica.com/topic/Poseidon">Poseidon's Website</a></td>
+          </tr>
+          <tr>
+              <td>Medusa's Sisters</td>
+              <td><a href="https://www.britannica.com/topic/Gorgon">Gorgon Website</a></td>
+          </tr>
+      </tbody>
+  </table>
+    <div class="drop">
+      <select id="pageSelect" onchange="navigateToPage()">
+        <option value="">Select a page</option>
+        <option value="index.html">Page 1</option>
+        <option value="two.html">Page 2</option>
+        <option value="three.html">Page 3</option>
+    </select>
+  
+    <script>
+        function navigateToPage() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    </div>
+    </main>
+  <footer></footer>
+  </body>
+</html>

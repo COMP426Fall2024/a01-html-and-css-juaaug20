@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>medusa story</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div> </div>
+      <div class="title"> 
+        <strong> Story of Medusa </strong>
+      </div>
+      <div class ="navi">     
+            <ul>
+             <li class="menu-item"><a href="index.html" data-scroll>page 1</a></li>
+             <li class="menu-item"><a href="two.html" data-scroll>page 2</a></li>
+             <li class="menu-item"><a href="three.html" data-scroll>page3</a></li>
+           </ul>
+    </div>
+    </header>
+    <main>
+      <div class="pics">
+        <img src="two.jpeg" alt="medusa pic">
+      </div>
+
+      <div class="ti">
+        <h1> Medusa Continued...</h1>
+      </div>
+     <div class="desc">
+     <p> 
+      There are several different versions of the story of why Poseidon wanted to make Medusa his own. Some variations of the myth say that she fell in love with him while others believe that she remained loyal to the goddess Athena and was taken by Poseidon against her own will. 
+After Poseidon, Medusa is cast aside by Athena as she is furious with Medusa for no longer being a virgin and becoming pregnant with the offspring of her own enemy, Poseidon. Athena continues to be furious and blames Medusa entirely, and as a result, punishes her by turning her into a snake monster. Medusa is turned into a monster with bronze wings and hands, as well as a venomous nest of snakes for hair. Along with these physical changes, she is given the ability to turn anyone that looks into her eyes into stone. Her two sisters attempt to defend her, leading to their own punishment where they are then transformed into the gorgon sisters of legend. Medusa feels both deeply betrayed by Athena whom she had devoted her life to and hatred towards Poseidon for what he had done to her. Over time her character changes and eventually starts to match her physical form, a “vicious monster”. As this monster, she is no longer desirable and sought over by men for her beauty. Her hatred begins to grow further as her inner self develops into a true reflection of her outer form as she kills all who attempt to harm her. Then, the son of Zeus, Perseus is sent to claim Medusa’s head. 
+
+
+     </p> 
+    </div>
+
+    <div class="drop">
+      <select id="pageSelect" onchange="navigateToPage()">
+        <option value="">Select a page</option>
+        <option value="index.html">Page 1</option>
+        <option value="two.html">Page 2</option>
+        <option value="three.html">Page 3</option>
+    </select>
+  
+    <script>
+        function navigateToPage() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    </div>
+    </main>
+  
+    <footer>
+      
+    </footer>
+  
+  
+  </body>
+</html>
